@@ -7,6 +7,7 @@ package com.unicauca.figures;
 import com.unicauca.domain.entities.Circle;
 import com.unicauca.domain.entities.Figure;
 import com.unicauca.domain.entities.Square;
+import com.unicauca.domain.entities.Triangle;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,13 +30,13 @@ public class Main {
         Figure fig2 = new Circle(10,10,1.12);
         Figure fig3 = new Square(10,10,2.0);
         Figure fig4 = new Square(15,15,4.0);
-        
+        Figure fig5 = new Triangle(4.0,4.5,3.0,3.0,3.0,5.0,4.0);
         //Agregar las figuras al array
         myArray.add(fig1);
         myArray.add(fig2);
         myArray.add(fig3);
         myArray.add(fig4);
-        
+        myArray.add(fig5);
         for (Figure fig: myArray){
             //Aqui estamos probando el polimosfismo, en tiempo de ejecucion
             //Debe ejecutar las versiones de area y perimetro de una figura distinta
