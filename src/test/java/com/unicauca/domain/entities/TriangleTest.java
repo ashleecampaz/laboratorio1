@@ -42,12 +42,12 @@ public class TriangleTest {
     @Test
     public void testCalculateArea() {
         System.out.println("calculateArea");
-        Triangle instance = null;
-        double expResult = 0.0;
+        Triangle instance = new Triangle(4.0,4.5,3.0,3.0,3.0,5.0,4.0);
+        double expResult = 4.5*4.0/2;
         double result = instance.calculateArea();
         assertEquals(expResult, result, 0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+      
     }
 
     /**
@@ -56,12 +56,12 @@ public class TriangleTest {
     @Test
     public void testCalculatePerimeter() {
         System.out.println("calculatePerimeter");
-        Triangle instance = null;
-        double expResult = 0.0;
+        Triangle instance = new Triangle(4.0,4.5,3.0,3.0,3.0,5.0,4.0);
+        double expResult = 3*3;
         double result = instance.calculatePerimeter();
         assertEquals(expResult, result, 0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -70,12 +70,12 @@ public class TriangleTest {
     @Test
     public void testGetHeight() {
         System.out.println("getHeight");
-        Triangle instance = null;
-        double expResult = 0.0;
+        Triangle instance = new Triangle(4.0,4.5,3.0,3.0,3.0,5.0,4.0);
+        double expResult = 4.0;
         double result = instance.getHeight();
         assertEquals(expResult, result, 0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -84,11 +84,11 @@ public class TriangleTest {
     @Test
     public void testSetHeight() {
         System.out.println("setHeight");
-        double height = 0.0;
-        Triangle instance = null;
+        double height = 4.0;
+        Triangle instance = new Triangle(4.0,4.5,3.0,3.0,3.0,5.0,4.0);
         instance.setHeight(height);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -97,12 +97,12 @@ public class TriangleTest {
     @Test
     public void testGetBase() {
         System.out.println("getBase");
-        Triangle instance = null;
-        double expResult = 0.0;
+        Triangle instance = new Triangle(4.0,4.5,3.0,3.0,3.0,5.0,4.0);
+        double expResult = 4.5;
         double result = instance.getBase();
         assertEquals(expResult, result, 0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -111,11 +111,12 @@ public class TriangleTest {
     @Test
     public void testSetBase() {
         System.out.println("setBase");
-        double base = 0.0;
-        Triangle instance = null;
+        double base = 5.0;
+        Triangle instance = new Triangle(4.0,4.5,3.0,3.0,3.0,5.0,4.0);
         instance.setBase(base);
+        assertEquals(base, instance.getBase(), 0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -124,12 +125,12 @@ public class TriangleTest {
     @Test
     public void testGetSide1() {
         System.out.println("getSide1");
-        Triangle instance = null;
-        double expResult = 0.0;
+        Triangle instance = new Triangle(4.0,4.5,3.0,3.0,3.0,5.0,4.0);
+        double expResult = 3.0;
         double result = instance.getSide1();
         assertEquals(expResult, result, 0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       
     }
 
     /**
@@ -138,11 +139,12 @@ public class TriangleTest {
     @Test
     public void testSetSide1() {
         System.out.println("setSide1");
-        double side1 = 0.0;
-        Triangle instance = null;
+        double side1 = 9.0;
+        Triangle instance = new Triangle(4.0,4.5,3.0,3.0,3.0,5.0,4.0);
         instance.setSide1(side1);
+        assertEquals(side1, instance.getSide1(), 0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -151,12 +153,12 @@ public class TriangleTest {
     @Test
     public void testGetSide2() {
         System.out.println("getSide2");
-        Triangle instance = null;
-        double expResult = 0.0;
+        Triangle instance = new Triangle(4.0,4.5,3.0,3.0,3.0,5.0,4.0);
+        double expResult = 3.0;
         double result = instance.getSide2();
         assertEquals(expResult, result, 0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -165,11 +167,12 @@ public class TriangleTest {
     @Test
     public void testSetSide2() {
         System.out.println("setSide2");
-        double side2 = 0.0;
-        Triangle instance = null;
+        double side2 = 4.0;
+        Triangle instance = new Triangle(4.0,4.5,3.0,3.0,3.0,5.0,4.0);
         instance.setSide2(side2);
+        assertEquals(side2, instance.getSide2(), 0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       
     }
 
     /**
@@ -178,12 +181,12 @@ public class TriangleTest {
     @Test
     public void testGetSide3() {
         System.out.println("getSide3");
-        Triangle instance = null;
-        double expResult = 0.0;
+        Triangle instance = new Triangle(4.0,4.5,3.0,3.0,3.0,5.0,4.0);
+        double expResult = 3.0;
         double result = instance.getSide3();
         assertEquals(expResult, result, 0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -192,11 +195,12 @@ public class TriangleTest {
     @Test
     public void testSetSide3() {
         System.out.println("setSide3");
-        double side3 = 0.0;
-        Triangle instance = null;
+        double side3 = 5.0;
+        Triangle instance = new Triangle(4.0,4.5,3.0,3.0,3.0,5.0,4.0);
         instance.setSide3(side3);
+        assertEquals(side3, instance.getSide3(), 0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -205,12 +209,12 @@ public class TriangleTest {
     @Test
     public void testToString() {
         System.out.println("toString");
-        Triangle instance = null;
-        String expResult = "";
+        Triangle instance = new Triangle(4.0,4.5,3.0,3.0,3.0,5.0,4.0);
+        String expResult = "Triangle";
         String result = instance.toString();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       
     }
     
 }
